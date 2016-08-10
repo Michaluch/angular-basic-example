@@ -13,7 +13,7 @@ angular.module('myApp.view1', ['ngRoute'])
 
 
         function okToGreet(name) {
-            var validNames = ['Vladimir Putin', 'Robin Hood', 'Chuck Norris'];
+            var validNames = ['Otto fon Bismark', 'Oda Nobunaga', 'Chuck Norris'];
             return validNames.indexOf(name) != -1;
         }
 
@@ -33,11 +33,11 @@ angular.module('myApp.view1', ['ngRoute'])
             return deferred.promise;
         }
 
-        var p1 = asyncGreet('Robin Hood', 1000);
+        var p1 = asyncGreet('Oda Nobunaga', 1000);
 
         var p2 = asyncGreet('Chuck Norris', 1500);
 
-        var p3 = asyncGreet('Vladimir Putin', 500);
+        var p3 = asyncGreet('Otto fon Bismark', 500);
 
         var p4 = p2.then(successCb, errorCb, notifyCb);
 
